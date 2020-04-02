@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="style.css">
+		<script src="index.js"></script>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="box" id="box">
+
+		</div>
+		
+	</body>
+</html>
+
+<script>
+	$(function(){
+		var carousel = new Carousel();
+		carousel.init({
+			timer:3000,
+			container:'#box',
+			imgSrc:['img/b1.png','img/b2.png','img/b3.png','img/b4.png','img/b5.png']
+		})
+	})
+</script>
